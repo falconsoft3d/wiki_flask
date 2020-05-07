@@ -25,7 +25,7 @@ Ctrl + C
 
 # 5. Instalando librerias
 ```  
-sudo apt-get install libapache2-mod-wsgi python-dev pyhton-pip -y
+sudo apt-get install libapache2-mod-wsgi python-dev python-pip -y
 pip install flask
 pip install flask_sqlalchemy
 pip install tornado
