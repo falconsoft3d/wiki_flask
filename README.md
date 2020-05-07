@@ -84,8 +84,7 @@ systemctl reload apache2
 
 # 10. webapp.wsgi
 ```
-cd /var/wwww/webApp
-sudo nano webapp.wsgi
+nano /var/www/webApp/webapp.wsgi
 ```
 
 ```
