@@ -58,6 +58,29 @@ if __name__ == "__main__":
     app.run()
 ``` 
 
+# 7. Creammos el fichero de Tornado.
+```  
+nano __init__.py
+```  
+
+```  
+import tornado.ioloop
+import tornado.web 
+
+class Index(tornado.web.RequestHandler):
+    def get(self):
+        #y vamos a escribir en le navegador el hola mundo
+        self.write('Hola Mundo')
+
+if __name__ == '__main__':
+    #declaramos la url con la clase que arriba
+    app = tornado.web.Application([
+        (r'/',Index)
+    ])
+    app.listen(8000)
+    tornado.ioloop.IOLoop.instance().start()
+``` 
+
 # 8. Configuramos el webApp.conf
 ```  
 nano /etc/apache2/sites-available/webApp.conf
