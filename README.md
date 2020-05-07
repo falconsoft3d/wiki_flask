@@ -5,7 +5,7 @@
 sudo apt update
 ``` 
 
-# 2. Actualizamos el sistema 
+# 2. Instalamos Apache
 ```  
 sudo apt install apache2
 ``` 
