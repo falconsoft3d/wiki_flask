@@ -73,6 +73,33 @@ nano /etc/apache2/sites-available/webApp.conf
                 CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+# 9. a2ensite
+```
+sudo a2ensite webApp
+systemctl reload apache2
+```
+
+# 10. webapp.wsgi
+```
+cd /var/wwww/webApp
+sudo nano webapp.wsgi
+```
+
+```
+#!/usr/bin/python
+import sys
+import loggin
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"var/www/webApp")
+
+from webApp import app as application
+application.secret_key = "marlon_secret_key"
+```
+
+# 11. Reiniciamos Apache
+```
+sudo service apache2 restart
+```
 
 
 
