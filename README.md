@@ -23,6 +23,11 @@ sudo systemctl status 'apache2'
 Ctrl + C
 ``` 
 
+# 5. Instalando librerias
+```  
+sudo apt-get install libapache2-mod-wsgi python-dev -y
+``` 
+
 
 
 
