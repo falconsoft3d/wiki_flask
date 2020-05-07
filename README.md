@@ -1,4 +1,4 @@
-# Instalar Flask
+# Deploy Flask.
 
 # 1. Actualizamos el sistema 
 ```  
