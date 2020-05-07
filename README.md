@@ -43,7 +43,7 @@ cd webApp
 
 # 7. Creammos el fichero de flask
 ```  
-nano main.py
+nano __init__.py
 ```  
 
 ```  
