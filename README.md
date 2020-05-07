@@ -25,7 +25,14 @@ Ctrl + C
 
 # 5. Instalando librerias
 ```  
-sudo apt-get install libapache2-mod-wsgi python-dev -y
+sudo apt-get install libapache2-mod-wsgi python-dev pyhton-pip -y
+``` 
+
+# 6. Instalando librerias
+```  
+cd /var/www
+mkdir webApp
+cd webApp
 ``` 
 
 
