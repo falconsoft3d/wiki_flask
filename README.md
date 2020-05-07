@@ -91,9 +91,9 @@ sudo nano webapp.wsgi
 ```
 #!/usr/bin/python
 import sys
-import loggin
+import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"var/www/webApp")
+sys.path.insert(0,"/var/www/webApp/")
 
 from webApp import app as application
 application.secret_key = "marlon_secret_key"
