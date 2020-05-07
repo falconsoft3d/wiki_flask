@@ -41,6 +41,22 @@ mkdir webApp
 cd webApp
 ``` 
 
+# 7. Creammos el fichero de flask
+```  
+nano main.py
+```  
+
+```  
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+``` 
+
+
+
 
 
 
