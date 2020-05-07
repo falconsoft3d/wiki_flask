@@ -36,6 +36,9 @@ pip install tornado
 cd /var/www
 mkdir webApp
 cd webApp
+
+mkdir webApp
+cd webApp
 ``` 
 
 
