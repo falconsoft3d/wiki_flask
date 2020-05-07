@@ -1,5 +1,10 @@
 # Deploy Flask/Tornado
 
+# 0. Creamos un VPS en Digitalocean
+```  
+https://m.do.co/c/7f5c3af8d6bb
+``` 
+
 # 1. Actualizamos el sistema 
 ```  
 sudo apt update
