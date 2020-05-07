@@ -55,6 +55,26 @@ def hello_world():
     return 'Hello, World!'
 ``` 
 
+# 8. Configuramos el webApp.conf
+```  
+nano /etc/apache2/sites-available/webApp.conf
+```  
+```  
+<VirtualHost *:80>
+                ServerName 127.121.12.1212
+                ServerAdmin email@email.com
+                WSGIScriptAlias / /var/www/webApp/webapp.wsgi
+                <Directory /var/www/webApp/webApp/>
+                            Order allow,deny
+                            Allow from all
+                </Directory>
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                LogLevel warn
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+
 
 
 
